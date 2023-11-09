@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Fator de Atrito</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h2>Calculadora Fator de Atrito</h2>
+
+      <input
+        type="number"
+        id="reynolds"
+        placeholder="Número de Reynolds"
+      /><br />
+
+      <input
+        type="number"
+        id="rugosidade"
+        placeholder="Rugosidade da Tubulação (m)"
+      /><br />
+
+      <div class="btn-group">
+        <button onclick="calcularFatorAtrito()">Calcular</button>
+      </div>
+
+      <input type="text" id="resultado" readonly />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
